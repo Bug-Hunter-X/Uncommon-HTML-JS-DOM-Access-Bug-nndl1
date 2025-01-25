@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Bug Solution</title>
+</head>
+<body>
+  <div id="myDiv">
+    This is some text.
+  </div>
+
+  <script>
+    // Correctly referencing element after it's in the DOM using DOMContentLoaded
+    document.addEventListener('DOMContentLoaded', function() {
+      console.log(document.getElementById('myDiv').innerHTML);
+    });
+  </script>
+</body>
+</html>
