@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Bug</title>
+</head>
+<body>
+  <div id="myDiv">
+    This is some text.
+  </div>
+
+  <script>
+    // Incorrectly referencing an element before it's in the DOM
+    console.log(document.getElementById('myDiv').innerHTML); // This might cause an error if the script runs before the div is fully parsed
+  </script>
+</body>
+</html>
